@@ -1,3 +1,37 @@
+.completed {
+  text-decoration: line-through;
+}
+.tasks {
+  padding: 0;
+  list-style: none;
+  width: 400px;
+}
+.task {
+  position: relative;
+  padding: 2px 0 2px 28px;
+  border-bottom: dotted 1px #ccc;
+}
+form.update {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+}
+form.update input {
+  background: #fff;
+  color: #fff;
+  padding: 0 2px;
+  border: solid 1px #666;
+  cursor: pointer;
+  min-width: 15px;
+}
+.tasks li.completed form.update input {
+  color: #666;
+}
 .delete {
-  display: inline-block;
+  display: inline;
+}
+.delete input {
+  background: none;
+  cursor: pointer;
+  border: none;
 }
